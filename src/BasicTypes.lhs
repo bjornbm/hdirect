@@ -50,6 +50,8 @@ module BasicTypes
 
         ) where
 
+import Prelude hiding ((<>))
+
 import PP
 import Data.Maybe ( fromMaybe )
 import Opts  ( optNoQualNames, optIntIsInt )

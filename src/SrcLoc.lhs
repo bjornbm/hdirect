@@ -14,6 +14,8 @@ module SrcLoc
         , ppSrcLoc
         ) where
 
+import Prelude hiding ((<>))
+
 import PP
 \end{code}
 

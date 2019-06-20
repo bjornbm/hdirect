@@ -8,6 +8,8 @@
 \begin{code}
 module PpIDLSyn where
 
+import Prelude hiding ((<>))
+
 import IDLSyn
 import PP
 import Literal

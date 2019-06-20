@@ -28,6 +28,8 @@ module PpAbstractH
         , ppExpr
         ) where
 
+import Prelude hiding ((<>))
+
 import PP hiding ( integer )
 import AbstractH
 import AbsHUtils ( splitFunTys, isVarPat, tyInt32 )

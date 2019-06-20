@@ -68,6 +68,8 @@ module PP
         
        ) where
 
+import Prelude hiding ((<>))
+
 import qualified Text.PrettyPrint as P
 
 type PPDoc a = a -> P.Doc

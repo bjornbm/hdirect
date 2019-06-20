@@ -7,6 +7,8 @@ Backend which emits C stubs compatible with Hugs' 'primitive' declarations.
 \begin{code}
 module HugsCodeGen ( hugsCodeGen ) where
 
+import Prelude hiding ((<>))
+
 import AbstractH
 import AbsHUtils ( splitFunTys, isIOTy )
 import PP

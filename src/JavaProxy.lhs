@@ -14,6 +14,8 @@ method declarations.
 \begin{code}
 module JavaProxy ( javaProxyGen, prepareDecls ) where
 
+import Prelude hiding ((<>))
+
 import CoreIDL
 import CoreUtils  ( isVoidTy )
 import Attribute

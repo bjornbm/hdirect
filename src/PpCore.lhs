@@ -10,6 +10,8 @@ Pretty printing the Core IDL type
 \begin{code}
 module PpCore where
 
+import Prelude hiding ((<>))
+
 import CoreIDL
 import Literal
 import BasicTypes

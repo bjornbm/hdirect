@@ -9,6 +9,8 @@ set of return types allowed by the GHC/Hugs FFI and C
 \begin{code}
 module CStubGen (cStubGen) where
 
+import Prelude hiding ((<>))
+
 import AbstractH
 import AbsHUtils ( splitFunTys )
 import PP
