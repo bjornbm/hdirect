@@ -45,14 +45,14 @@ Copyright:          1998-2003 University of Glasgow and Sigbjorn Finne. 2010 Don
 Stability:          Stable
 Category:           Development
 Build-type:         Simple
-cabal-version:      >= 1.6
+cabal-version:      >= 1.8
 
 source-repository head
     type:     darcs
     location: http://code.haskell.org/~dons/code/hdirect
 
 Executable hdirect
-    hs-source-dirs:  src
+    hs-source-dirs:  app
     Main-Is:            Main.lhs
     ghc-options:        -Wall
     build-tools:        happy
@@ -61,7 +61,8 @@ Executable hdirect
                         array,
                         time,
                         old-locale,
-                        old-time
+                        old-time,
+                        hdirect
 
 library
     hs-source-dirs:  src
@@ -100,7 +101,6 @@ library
         LexM
         LibUtils
         Literal
-        Main
         MarshallAbstract
         MarshallAuto
         MarshallCore
